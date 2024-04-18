@@ -1,6 +1,12 @@
 ## harmonyOS4.0重构之前的uni-app项目
 
-### 部分页面预览
+#### 增删改功能采用@ohos.data.relationalStore实现，查功能采用接口实现（ps: 服务器配置低）
+
+#### 已实现功能：商品、购物车、订单、收货地址等
+
+#### 待完成功能：登录、积分等等
+
+#### 部分页面预览
 
 <img src="https://harmony.api.mashihuan.com/preview/home.png" height="400px">
 
