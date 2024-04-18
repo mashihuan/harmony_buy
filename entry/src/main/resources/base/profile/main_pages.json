@@ -1,0 +1,26 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Message",
+    "pages/PersonalData",
+    "pages/Coupon",
+    "pages/Integral",
+    "pages/Order",
+    "pages/AfterSale",
+    "pages/Member",
+    "pages/Invite",
+    "pages/Service",
+    "pages/Feedback",
+    "pages/Settings",
+    "pages/Login",
+    "pages/Register",
+    "pages/ForgetPassword",
+    "pages/Address",
+    "pages/AddressDetail",
+    "pages/SearchPage",
+    "pages/GoodsDetail",
+    "pages/MenuDetail",
+    "pages/OrderPay",
+    "pages/PayResult"
+  ]
+}
