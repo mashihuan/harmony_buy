@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://buy.api.mashihuan.com'
+export const BASE_URL = 'https://harmony.api.mashihuan.com'
