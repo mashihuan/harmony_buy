@@ -17,7 +17,7 @@ import emitter from '@ohos.events.emitter'
 @Entry
 @Component
 struct OrderPay {
-  @State cartList: CartItem[] = []
+  @State @Watch('calcCartInfo') cartList: CartItem[] = []
   @State integral: number = 0
   @State payMode: string = ''
   @State totalNumber: number = 0
@@ -52,9 +52,18 @@ struct OrderPay {
       if(defaultAddress) {
         this.addressInfo = defaultAddress
       }else {
-        this.addressInfo
+        this.addressInfo = data[0]
       }
     }
+  }
+
+  calcCartInfo() {
+    this.totalNumber = 0
+    this.totalPrice = 0
+    this.cartList.forEach((cart: CartItem) => {
+      this.totalNumber += cart.num
+      this.totalPrice += cart.num * cart.goods.new_price
+    })
   }
 
   async onSubmit() {

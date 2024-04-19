@@ -53,6 +53,8 @@ struct Order {
           Column() {
             OrderIndex({ orderList: $orderList })
           }
+          .width('100%')
+          .height('100%')
         }
         .tabBar(this.TabBuilder('全部', 0))
 
@@ -60,6 +62,8 @@ struct Order {
           Column() {
             OrderIndex({ orderList: $orderList })
           }
+          .width('100%')
+          .height('100%')
         }
         .tabBar(this.TabBuilder('待付款', 1))
 
@@ -67,6 +71,8 @@ struct Order {
           Column() {
             OrderIndex({ orderList: $orderList })
           }
+          .width('100%')
+          .height('100%')
         }
         .tabBar(this.TabBuilder('待收货', 2))
 
@@ -74,6 +80,8 @@ struct Order {
           Column() {
             OrderIndex({ orderList: $orderList })
           }
+          .width('100%')
+          .height('100%')
         }
         .tabBar(this.TabBuilder('待评价', 3))
       }
